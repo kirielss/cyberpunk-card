@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Nanum+Gothic&display=swap');
+
 body {
     display: flex;
     justify-content: center;
@@ -5,9 +7,18 @@ body {
     height: 100vh;
     background-color: rgb(10, 22, 13);
     color: hsl(0, 0%, 100%);
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 'Inconsolata', Verdana, sans-serif;
     font-weight: 500;
+    font-size: 1.2rem;
 }
+
+h1 {
+    text-decoration:underline;
+    text-decoration-color: rgb(64, 247, 110);
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    text-shadow: 0.1rem 0 rgba(0, 0, 0, 0.5);
+  }
 
 .card {
     position: relative;
@@ -22,45 +33,66 @@ body {
 
 .text-box {
     position: absolute;
-    bottom: 60px;
-    left: 10px;
-    margin: 10px; 
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    transition-duration: 2s;
+    transition-delay: 0.2s;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    
+}
+
+.text {
+    bottom: 2.5rem;
+    left: 0.625rem;
+    margin: 1.25rem;
 }
 
 .hidden {
-    display: none;
+    opacity: 0;
+    transition-duration: 2s;
+    transition-delay: 0.2s;
+
 }
 
+
 .card:hover .hidden {
-    display: block;
+    opacity: 1;
+    
 }
 
 .card:hover .text-box {
-    background-color: rgba(0, 0, 0, 0.5);
-    left: 0px;
-    bottom: 0px;
-    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    
 }
 
-.card:hover .text {
-    bottom: 40px;
-    left: 10px;
-    margin: 20px; 
+.hidden b {
+    color: rgb(64, 247, 110);
+    text-shadow: 2px 0 black;
+    letter-spacing: 0.063rem;
+    opacity: 0;
+    transition-duration: 2s;
+    transition-delay: 2s;
+}
+
+.card:hover .hidden b {
+    opacity: 1;
 }
 
 .button {
     background-color: rgb(10, 22, 13);
     color: hsl(0, 0%, 100%);
-    padding: 8px;
-    border-radius: 10px;
+    padding: 0.5rem;
+    border-radius: 0.625rem;
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: 500;
-    text-shadow: 0.5px 0 hsl(0, 0%, 100%);
+    text-shadow: 0.031rem 0 hsl(0, 0%, 100%);
     cursor: pointer;
 }
 
 .button:hover {
     background-color: rgb(64, 247, 110);
     color: hsl(107, 80%, 8%);
-    text-shadow: 0.5px 0 hsl(107, 80%, 8%);
+    text-shadow: 0.031rem 0 hsl(107, 80%, 8%);
 }
