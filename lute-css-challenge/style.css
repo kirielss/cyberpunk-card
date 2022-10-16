@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(10, 22, 13);
+    color: hsl(0, 0%, 100%);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.card {
+    position: relative;
+    display: block;
+}
+
+.lucy-img {
+    border-radius: 5%;
+    display: block;
+    width: 100%;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    margin: 10px; 
+}
+
+.hidden {
+    display: none;
+}
+
+.card:hover .hidden {
+    display: block;
+}
+
+.card:hover .text-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0px;
+    bottom: 0px;
+    margin: 0;
+}
+
+.card:hover .text {
+    bottom: 40px;
+    left: 10px;
+    margin: 20px; 
+}
+
+.button {
+    background-color: rgb(10, 22, 13);
+    color: hsl(0, 0%, 100%);
+    padding: 8px;
+    border-radius: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+    text-shadow: 0.5px 0 hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(64, 247, 110);
+    color: hsl(107, 80%, 8%);
+    text-shadow: 0.5px 0 hsl(107, 80%, 8%);
+}
